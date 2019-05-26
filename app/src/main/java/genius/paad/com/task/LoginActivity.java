@@ -3,7 +3,6 @@ package genius.paad.com.task;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -15,10 +14,9 @@ import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import genius.paad.com.task.DataBinding.Listener;
-import genius.paad.com.task.ViewModel.LoginViewModel;
 
-public class LoginActivity extends AppCompatActivity  implements Listener {
+
+public class LoginActivity extends AppCompatActivity  {
 
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
@@ -176,9 +174,4 @@ public class LoginActivity extends AppCompatActivity  implements Listener {
         return valid;
     }
 
-
-    @Override
-    public void onClick(View view) {
-
-    }
 }
